@@ -7,7 +7,7 @@ const Navbar = () => {
 
 	const { user, signOutUser } = useContext(AuthContext);
 	// console.log(user);
-	
+
 
 	const handleSignOut = () =>{
 		signOutUser()
@@ -24,6 +24,7 @@ const Navbar = () => {
 				{
 					user && <>
 						<li><NavLink to='/orders'>Orders</NavLink></li>
+						<li><NavLink to='/profile'>Profile</NavLink></li>
 					</>
 				}
 
